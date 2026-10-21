@@ -1,1 +1,7 @@
-This library is intended to serve as a processing system for .fit files, providing insight focused on prominent running and cycling metrics.
+This library is intended to serve as a processing system for .fit files, providing insight focused on prominent running and cycling metrics. 
+
+Current usage is very basic; processing a .fit file will yield a dashboard with activity map, timeseries plots, and summary metrics. 
+
+To run the full process, run DataProcessing with the --fit parser argument pointing to the fit file you wish to process. 
+
+One key dependency is GPSBabel. This must be installed from their (scam-filled) website. Once installed, add to PATH.
