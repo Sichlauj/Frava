@@ -1,0 +1,40 @@
+
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Activity Dashboard</title>
+        <style>
+          body { font-family: Arial, sans-serif; margin: 24px; background: #f4f6f8; color: #1f2937; }
+          h1 { margin-bottom: 8px; }
+          .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+          .panel { background: white; border-radius: 10px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+          table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+          th, td { border: 1px solid #dfe4ea; padding: 8px 10px; text-align: left; }
+          th { background: #eef2ff; }
+          iframe { width: 100%; border: 0; border-radius: 8px; }
+          img { width: 100%; border-radius: 8px; }
+        </style>
+      </head>
+      <body>
+        <h1>Activity Dashboard</h1>
+        <div class="grid">
+          <div class="panel">
+            <h2>1. Map of the activity</h2>
+            <iframe src="Woo_woo_map.html" width="100%" height="420" style="border:none"></iframe>
+          </div>
+          <div class="panel">
+            <h2>2. Speed / Elevation / HR / Power plot</h2>
+            <img src="Woo_woo_summary.png" style="width:100%; max-height:420px; object-fit:contain;" />
+          </div>
+          <div class="panel">
+            <h2>3. Summary metrics</h2>
+            <table><tr><th>Metric</th><th>Value</th></tr><tr><td>Average speed</td><td>10.98 km/h</td></tr><tr><td>Max speed</td><td>13.87 km/h</td></tr><tr><td>Distance</td><td>17.82 km</td></tr><tr><td>Elevation gain</td><td>648.7 ft</td></tr><tr><td>Average grade</td><td>1.11%</td></tr></table>
+          </div>
+          <div class="panel">
+            <h2>4. Detailed stats</h2>
+            <table><tr><th>Metric</th><th>Value</th></tr><tr><td>Acceleration events (>10% step)</td><td>21</td></tr><tr><td>Climbs</td><td>0</td></tr><tr><td>Climbing HR</td><td>n/a</td></tr></table>
+          </div>
+        </div>
+      </body>
+    </html>
+    
